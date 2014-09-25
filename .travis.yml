@@ -1,0 +1,18 @@
+language: ruby
+rvm:
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
+deploy:
+  provider: heroku
+  api_key:
+    secure: D/9YgAcAY8wLYzYTQJwmnnSzLHr/+mrYNI5CjiRBEmCffNPifobgoACEL/BJH6YRqJVdYGSvTJZ6AcqGlBBCEKK+8WREM39TxkpwKW13/Tq1yeI00GMJc4jXkMojQzdOktAXsCqZx0Sz4HuCTGFFY5aLtte1ui+UTL11+uVvneU=
+  app: aqueous-headland-9882
+  on:
+    repo: 328--/rakuten_sold_out
+addons:
+  postgresql: "9.3"
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
+  - cp config/database.yml.travis config/database.yml
