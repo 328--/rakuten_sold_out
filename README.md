@@ -23,6 +23,7 @@
 - `SOLD_OUT_APPID`  アプリID/デベロッパーID
 - `SOLD_OUT_AFID`  アフェリエイトID
 
+
 # 使い方
 
 ```
