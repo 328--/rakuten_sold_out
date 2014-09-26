@@ -28,4 +28,4 @@ export SOLD_OUT_AFID=xxxxxxx.xxxxx.xxxx.xxxx
 ```
 
 # ライセンス
-このサンプルコードはMITライセンスにて提供しています。詳しくは LICENSE.txt ファイルをご確認ください。
+MITライセンスにて提供しています。詳しくは LICENSE.txt ファイルをご確認ください。
