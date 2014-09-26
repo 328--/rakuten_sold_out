@@ -1,3 +1,15 @@
-<h2>Hello World</h2> <p>
-The time is now: <%= Time.now %>
-</p>
+<div class="starter-template" style="margin-top: 5em;">
+
+  <h4>Select a Genre
+<%= form_tag({action: :search}, remote: true) do %>
+<%= select_tag 'selected_genre', options_from_collection_for_select(@genres, :id, :name), :include_blank => true %>
+<%= submit_tag "Send" %><% end %></h4>
+
+  <br />
+  
+  <div id='ajax_area'>
+	<%= render :partial => 'show', :object => @search_result %>
+  </div>
+
+</div>
+

@@ -1,0 +1,20 @@
+<h3>商品一覧</h3>
+<% if @search_result.nil? %>
+
+<p>該当情報なし</p>
+
+<% else %>
+
+<table class='sample_01'>
+  <% @search_result['Items'].each do |item| %>
+  <%  if item['Item']['availability'] == 0 %>
+  <tr>
+	<td><div align='center'><image src='<%=  item['Item']['mediumImageUrls'][0]['imageUrl'] %>'></div></td>
+	<td><a href='<%= item['Item']['itemUrl'] %>>' target='_blank'><%=  item['Item']['itemName'] %></td>
+  </tr>
+  <%  end %>
+  <% end %>
+  
+</table>
+
+<% end %>
