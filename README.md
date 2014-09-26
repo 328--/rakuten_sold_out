@@ -8,6 +8,10 @@
 
 - https://aqueous-headland-9882.herokuapp.com/
 
+# 紹介スライド
+
+- https://github.com/328--/sold_out_slideshow
+
 
 # テスト時の注意
 
