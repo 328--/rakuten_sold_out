@@ -8,6 +8,11 @@
 
 - https://aqueous-headland-9882.herokuapp.com/
 
+
+# Travis-CI build status
+
+![Travis](https://travis-ci.org/328--/rakuten_sold_out.svg?branch=master)
+
 # 紹介スライド
 
 - https://github.com/328--/sold_out_slideshow
