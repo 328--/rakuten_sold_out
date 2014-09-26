@@ -5,10 +5,11 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="container">
+	<%= yield %><!-- ※この行は各ページを表示するための、最初から存在する。 -->
+  </div><!-- /.container -->
 </body>
 </html>

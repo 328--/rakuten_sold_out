@@ -1,3 +1,24 @@
-<h2>Hello World</h2> <p>
-The time is now: <%= Time.now %>
-</p>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">楽天市場 ~売ってた奴~</a>
+	</div>
+	<div class="collapse navbar-collapse">
+<!--
+	  <ul class="nav navbar-nav">
+		<li class="active"><a href="#">Home</a></li>
+	  </ul>
+-->
+	</div><!--/.nav-collapse -->
+  </div>
+</div>
+
+<div class="starter-template" style="margin-top: 5em;">
+  <h4>Select a Genre &nbsp; <%= select_tag 'soldout[genre]', options_for_select( @genre_list), :prompt => "Please Select", :action => :show %></h4>
+</div>
