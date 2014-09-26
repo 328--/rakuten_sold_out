@@ -1,3 +1,5 @@
 <h2>Hello World</h2> <p>
 The time is now: <%= Time.now %>
 </p>
+
+<%= select_tag 'page[name]', options_from_collection_for_select(@genres, :id, :name) %>
