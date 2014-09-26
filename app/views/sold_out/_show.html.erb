@@ -10,7 +10,7 @@
   <%  if item['Item']['availability'] == 0 %>
   <tr>
 	<td><div align='center'><image src='<%=  item['Item']['mediumImageUrls'][0]['imageUrl'] %>'></div></td>
-	<td><a href='<%= item['Item']['itemUrl'] %>>' target='_blank'><%=  item['Item']['itemName'] %></td>
+	<td><a href='<%= item['Item']['itemUrl'] %>' target='_blank'><%=  item['Item']['itemName'] %></a></td>
   </tr>
   <%  end %>
   <% end %>
