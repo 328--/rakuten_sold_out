@@ -1,4 +1,4 @@
-# 楽天でこんなもの売ってましたサービス
+# 売ってないじゃん！！！！！
 
 ![Travis](https://travis-ci.org/328--/rakuten_sold_out.svg?branch=master)
 
